@@ -26,11 +26,11 @@ nav a { color: var(--muted); font-size: 13px; padding: 24px 0 21px; position: re
 nav a:hover, nav a.active { color: var(--navy); }
 nav a.active::after { background: var(--blue); bottom: -1px; content: ''; height: 2px; left: 0; position: absolute; width: 100%; }
 
-.profile-hero { background: var(--surface); padding: clamp(34px, 4vw, 52px) clamp(24px, 7vw, 108px) clamp(64px, 7vw, 88px); }
+.profile-hero { align-items: center; background: var(--surface); display: grid; min-height: calc(100svh - 68px); padding: clamp(46px, 5vw, 68px) clamp(24px, 7vw, 108px) clamp(76px, 8vw, 108px); }
 .hero-kicker, .eyebrow, .section-index, .page-number, .timeline-label, .publication-type, .signal-topic, .profile-card-label, .project-kicker, .project-question span, .project-contribution span { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .hero-kicker { align-items: center; color: var(--muted); display: flex; gap: 10px; }
 .hero-kicker span { background: var(--blue); height: 1px; width: 28px; }
-.profile-layout { align-items: stretch; display: grid; gap: clamp(44px, 7vw, 92px); grid-template-columns: minmax(320px, .88fr) minmax(0, 1.12fr); margin: 0 auto; max-width: 1180px; }
+.profile-layout { align-items: stretch; display: grid; gap: clamp(44px, 7vw, 92px); grid-template-columns: minmax(320px, .88fr) minmax(0, 1.12fr); margin: 0 auto; max-width: 1180px; width: 100%; }
 .profile-left-column { display: flex; flex-direction: column; gap: 24px; }
 .profile-photo-placeholder { align-self: center; aspect-ratio: 4 / 5; background: var(--paper); border: 1px solid var(--line); flex: none; max-width: 220px; width: 62%; }
 .profile-background { padding: 0 2px; }
@@ -170,9 +170,9 @@ nav a.active::after { background: var(--blue); bottom: -1px; content: ''; height
 .radar-method li p { color: var(--muted); font-size: 13px; line-height: 1.55; margin: 6px 0 0; }
 
 .football-hero { background: var(--surface); display: grid; gap: clamp(42px, 6vw, 86px); grid-template-columns: minmax(0, .95fr) minmax(420px, 1.05fr); padding: clamp(56px, 7vw, 88px) clamp(24px, 7vw, 108px) clamp(64px, 7vw, 88px); position: relative; }
-.football-identity { align-items: center; display: flex; gap: clamp(22px, 3vw, 38px); }
-.football-logo { background: var(--surface); flex: 0 0 auto; height: clamp(138px, 13vw, 178px); object-fit: contain; width: clamp(138px, 13vw, 178px); }
-.football-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(36px, 4vw, 52px); font-weight: 400; letter-spacing: -.035em; line-height: 1.08; margin: 0; max-width: 580px; }
+.football-identity { align-items: center; display: flex; gap: clamp(18px, 2.2vw, 28px); }
+.football-logo { background: var(--surface); flex: 0 0 auto; height: clamp(118px, 10vw, 146px); object-fit: contain; width: clamp(118px, 10vw, 146px); }
+.football-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(28px, 2.5vw, 36px); font-weight: 400; letter-spacing: -.035em; line-height: 1.08; margin: 0; max-width: none; white-space: nowrap; }
 .football-introduction { color: var(--muted); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(16px, 1.5vw, 19px); line-height: 1.65; margin: 30px 0 0; max-width: 650px; }
 .join-team-card { background: var(--blue-soft); border-left: 2px solid var(--blue); margin-top: 32px; padding: 20px 22px; }
 .join-team-card h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; font-weight: 400; margin: 0 0 8px; }
@@ -215,6 +215,7 @@ nav a.active::after { background: var(--blue); bottom: -1px; content: ''; height
 
 @media (max-width: 850px) {
   .profile-layout, .two-column-section, .connect-section, .project-directory, .research-project, .methods-section, .fellowships-section, .publication-section, .radar-method, .radar-coverage, .football-hero { grid-template-columns: 1fr; }
+  .profile-hero { display: block; min-height: auto; }
   .profile-left-column { min-height: auto; }
   .profile-photo-placeholder { max-width: 220px; width: 62%; }
   .profile-right-column { padding: 22px 0 0; }
@@ -243,7 +244,7 @@ nav a.active::after { background: var(--blue); bottom: -1px; content: ''; height
   .publication-list article { grid-template-columns: 58px 1fr 14px; }
   .footer-nav { flex-direction: column; gap: 12px; }
   .football-identity { align-items: flex-start; flex-direction: column; }
-  .football-logo { height: 138px; width: 138px; }
+  .football-logo { height: 122px; width: 122px; }
   .gallery-stage { gap: 8px; grid-template-columns: 1fr 1fr; }
   .gallery-slides { grid-column: 1 / -1; grid-row: 1; }
   .gallery-control { min-width: 0; }
