@@ -46,6 +46,7 @@ nav a.active::after { background: var(--blue); bottom: -1px; content: ''; height
 .hero-intro { color: var(--muted); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.65; margin: 28px 0 0; max-width: 680px; }
 .contact-icon-row { display: flex; gap: 10px; margin: 22px 0 30px; }
 .contact-icon-row a { align-items: center; border: 1px solid var(--line); border-radius: 4px; color: var(--navy); display: inline-flex; font-size: 13px; font-weight: 750; height: 42px; justify-content: center; transition: background .16s ease, border-color .16s ease, color .16s ease; width: 42px; }
+.contact-icon-row svg { fill: currentColor; height: 18px; width: 18px; }
 .contact-icon-row a:hover { background: var(--navy); border-color: var(--navy); color: var(--white); }
 .current-position { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); padding: 18px 0; }
 .current-position > span { color: var(--blue); display: block; font-size: 12px; font-weight: 700; letter-spacing: .1em; margin-bottom: 6px; text-transform: uppercase; }
